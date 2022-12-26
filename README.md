@@ -31,8 +31,6 @@ In this project, we will build an flask application that can predict house price
 
 ![image](https://user-images.githubusercontent.com/35824913/209524110-d0a5882a-fd6b-474a-916f-ca0acf1d9931.png)
 
-* Delete two yml files on the repo: azure-pipelines.yml and .github/workflows/python-app.yml so that you create your own yml files.
-
 ### Create and configure ssh key to github account
 
 * Go to Azure portal and create a new shell or bash command
@@ -54,6 +52,16 @@ cat <your-keyfile-path>
 ```
 git clone <your-SSH-path>
 ```
+
+### Configure github Actions to apply Continuous Integration (CI)
+
+* Go to github Actions and enable workflow file
+
+![image](https://user-images.githubusercontent.com/35824913/209563033-5acf9324-8404-4384-b6c4-222647bfdf34.png)
+
+* Update app.py and commit to make sure that github Actions run properly
+
+![image](https://user-images.githubusercontent.com/35824913/209563249-5f9f8058-0aaf-4e64-8d83-a833ac530e66.png)
 
 ### Create and active the python virtual environment and run project
 
@@ -80,28 +88,23 @@ az webapp up --name <yourwebappname> --resource-group <yourresourcegroup> --runt
 ```
 After hosting web app, you can open website by direct url
 
-![image](https://user-images.githubusercontent.com/35824913/209559186-ef3496cb-f52f-4123-8a64-68123f90ec1d.png)
+![image](https://user-images.githubusercontent.com/35824913/209563357-9048f9c1-5914-4bac-bdfc-9abb39534fe5.png)
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+* Run make_predict_azure_app.sh to make sure that web app are working properly
 
-* Output of a test run
-
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-
-* Running Azure App Service from Azure Pipelines automatic deployment
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+You need to change yourappname in this file (the second line from bottom)
 
 ```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
+udacity@p2-udacity:~$ ./make_predict_azure_app.sh
 ```
 
-* Output of streamed log files from deployed application
+The result should be like this
 
-> 
+![image](https://user-images.githubusercontent.com/35824913/209562303-2a6f581a-10a5-4a51-9d47-71bd3120b499.png)
+
+```bash
+
+```
 
 ## Enhancements
 
