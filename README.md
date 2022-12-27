@@ -101,12 +101,14 @@ udacity@p2-udacity:~$ ./make_predict_azure_app.sh
 
 - The result should be like this
 
-![image](https://user-images.githubusercontent.com/35824913/209562303-2a6f581a-10a5-4a51-9d47-71bd3120b499.png)
+![image](https://user-images.githubusercontent.com/35824913/209604933-459cf2b1-3023-4d2d-8ae9-d5e2f3ba81d9.png)
 
 ### Configure Azure pipelines to apply Continuos Delivery
 
 Azure devops deploy automatically your web application if github repo have any changes by using Azure pipelines.
-Make sure that you have Parallel jobs to run the pipelines (Require Microsoft or purchase)
+Make sure that you have Parallel jobs to run the pipelines (Require Microsoft or purchase).
+
+* [Reffered doccument](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
 
 * Login to Azure devops
 
@@ -135,12 +137,14 @@ Make sure that you have Parallel jobs to run the pipelines (Require Microsoft or
 
 * Now, if you make any changes to your github repo, It will trigger Azure pipelines to run which build your code and deploy your code automatically if building code successfully
 
+![image](https://user-images.githubusercontent.com/35824913/209605909-aa29e06a-0fa3-436e-bfdf-84d530da0962.png)
+
+![image](https://user-images.githubusercontent.com/35824913/209605792-d748fda2-2956-4093-ae8e-2e22307647a8.png)
+
 ## Enhancements
 
 * Create UI for better look
 
 ## Demo 
 
-
-
-
+* [Youtube](https://youtu.be/G0X44vP6qFc)
