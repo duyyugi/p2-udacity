@@ -1,3 +1,5 @@
+https://github.com/duyyugi/p2-udacity/actions/workflows/python-app.yml/badge.svg
+
 # Overview
 
 In this project, we will build an flask application that can predict house price of Boston or California. This project is applied Continuous Integration (CI) by using Github Actions and we use Azure App Service to deploy app to website and create a Azure Pipeline to apply changes automatically from code in github to web app so that we can apply Continuos Delivery (CD).
