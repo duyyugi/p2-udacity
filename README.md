@@ -1,4 +1,4 @@
-https://github.com/duyyugi/p2-udacity/actions/workflows/python-app.yml/badge.svg
+![Deploy badge](https://github.com/duyyugi/p2-udacity/actions/workflows/python-app.yml/badge.svg)
 
 # Overview
 
@@ -142,6 +142,28 @@ Make sure that you have Parallel jobs to run the pipelines (Require Microsoft or
 ![image](https://user-images.githubusercontent.com/35824913/209605909-aa29e06a-0fa3-436e-bfdf-84d530da0962.png)
 
 ![image](https://user-images.githubusercontent.com/35824913/209605792-d748fda2-2956-4093-ae8e-2e22307647a8.png)
+
+## Run locust test
+
+* You need to install locust in your environment
+
+```bash
+pip3 install locust
+```
+
+* Run your locust test file
+
+```bash
+locust - f <yourlocustfilename>
+```
+
+* Open http://localhost:8089/ and see all results
+
+![image](https://user-images.githubusercontent.com/35824913/209769642-bb6912cf-1d25-4dc2-a341-638b5f0fd1d2.png)
+
+* Command result
+
+![image](https://user-images.githubusercontent.com/35824913/209769704-77b878cb-40df-4774-8c07-202fe9808089.png)
 
 ## Enhancements
 
